@@ -1,0 +1,9 @@
+name: AsyncPvp
+author: FrostedSnowman
+
+version: 1.0.0
+
+main: me.frostedsnowman.asyncpvp.core.AsyncPvpPlugin
+
+softdepend:
+  - ProtocolLib

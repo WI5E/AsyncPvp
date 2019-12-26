@@ -1,0 +1,7 @@
+me\frostedsnowman\asyncpvp\api\damage\DamageProcessor.class
+me\frostedsnowman\asyncpvp\api\monsters\MonsterProcessor.class
+me\frostedsnowman\asyncpvp\api\damage\DamageEvaluation.class
+me\frostedsnowman\asyncpvp\api\AsyncPvpApi.class
+me\frostedsnowman\asyncpvp\api\DamagePrerequisites.class
+me\frostedsnowman\asyncpvp\api\monsters\MonsterType.class
+me\frostedsnowman\asyncpvp\api\adapters\EntityAttackAdapter.class
