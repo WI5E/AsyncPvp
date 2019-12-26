@@ -111,12 +111,13 @@ public class DamageProcessor1_14_4 implements PlayerDamageProcessor {
 
                 victimHealth = victim.getHealth();
                 if (fireAspect > 0 && !victim.isBurning()) {
-                    EntityCombustByEntityEvent combustEvent = new EntityCombustByEntityEvent(damager.getBukkitEntity(), victim.getBukkitEntity(), 1);
+/*                    EntityCombustByEntityEvent combustEvent = new EntityCombustByEntityEvent(damager.getBukkitEntity(), victim.getBukkitEntity(), 1);
                     Bukkit.getPluginManager().callEvent(combustEvent);
                     if (!combustEvent.isCancelled()) {
                         flag4 = true;
                         victim.setOnFire(combustEvent.getDuration(), false);
-                    }
+                    }*/
+                    victim.setOnFire(1, false);
                 }
 
                 Vec3D vec3d = victim.getMot();
