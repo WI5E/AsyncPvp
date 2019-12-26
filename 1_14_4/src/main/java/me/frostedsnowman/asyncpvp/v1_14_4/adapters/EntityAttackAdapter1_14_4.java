@@ -17,12 +17,8 @@ public class EntityAttackAdapter1_14_4 extends EntityAttackAdapter {
 
     @Override
     public void onHit(PacketEvent event, Player attacker, Player victim) {
-        DamageEvaluation damageEvaluation = this.asyncPvpApi.getDamageProcessor().process(attacker, victim);
-
-        Bukkit.getScheduler().runTask(this.plugin, () -> {
-          //  damageEvaluation.getFireTicks().ifPresent(victim::setFireTicks);
-            damageEvaluation.getBaseDamage().ifPresent(value -> victim.damage(value, attacker));
-            damageEvaluation.runSyncedActions();
+        this.asyncPvpApi.getDamageProcessor().process(victim, victim, damageEvaluation -> {
+            Bukkit.getScheduler().runTask(this.plugin, damageEvaluation::runSyncedActions);
         });
     }
 }

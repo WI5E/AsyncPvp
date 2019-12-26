@@ -24,7 +24,7 @@ public interface AsyncPvpApi {
     MonsterProcessor getMonsterProcessor();
 
     @Nonnull
-    DamageProcessor getDamageProcessor();
+    <T extends LivingEntity, U extends LivingEntity> DamageProcessor<T, U> getDamageProcessor();
 
     @Nonnull
     DamagePrerequisites getDamagePrerequisites();

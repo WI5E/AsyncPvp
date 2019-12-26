@@ -19,9 +19,6 @@ public final class DamageEvaluation {
 
     private double baseDamage;
 
-    private int fireTicks;
-    private double thornsDamage;
-
     private List<Runnable> syncedActions = new ArrayList<>();
 
     private boolean criticalHit;
@@ -37,16 +34,6 @@ public final class DamageEvaluation {
     @Nonnull
     public OptionalDouble getFinalDamage() {
         return this.finalDamage == 0 ? OptionalDouble.empty() : OptionalDouble.of(this.finalDamage);
-    }
-
-    @Nonnull
-    public OptionalInt getFireTicks() {
-        return this.fireTicks == 0 ? OptionalInt.empty() : OptionalInt.of(this.fireTicks);
-    }
-
-    @Nonnull
-    public OptionalDouble getThornsDamage() {
-        return this.thornsDamage == 0 ? OptionalDouble.empty() : OptionalDouble.of(this.thornsDamage);
     }
 
     public void addSyncedAction(Runnable runnable) {

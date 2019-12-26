@@ -47,7 +47,7 @@ public final class Riven {
         return cos[(int) (rad * radToIndex) & SIN_MASK];
     }
 
-    public static double maxOf(double var0, double var2, double var4) {
-        return var0 < var2 ? var2 : Math.min(var0, var4);
+    public static float maxOf(double var0, double var2, double var4) {
+        return (float) (var0 < var2 ? var2 : Math.min(var0, var4));
     }
 }

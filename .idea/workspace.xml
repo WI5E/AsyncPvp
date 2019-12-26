@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ab8576-c998-4c8c-8906-3c0300648fb1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/damage/PlayerDamageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_14_4/src/main/java/me/frostedsnowman/asyncpvp/v1_14_4/adapters/EntityAttackAdapter1_14_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/1_14_4/src/main/java/me/frostedsnowman/asyncpvp/v1_14_4/adapters/EntityAttackAdapter1_14_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_14_4/src/main/java/me/frostedsnowman/asyncpvp/v1_14_4/processors/DamageProcessor1_14_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/1_14_4/src/main/java/me/frostedsnowman/asyncpvp/v1_14_4/processors/DamageProcessor1_14_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/AsyncPvpApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/AsyncPvpApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/damage/DamageEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/damage/DamageEvaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/damage/DamageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/me/frostedsnowman/asyncpvp/api/damage/DamageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/me/frostedsnowman/asyncpvp/commons/maths/Riven.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/me/frostedsnowman/asyncpvp/commons/maths/Riven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/me/frostedsnowman/asyncpvp/commons/processors/BiProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/me/frostedsnowman/asyncpvp/commons/processors/BiProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/me/frostedsnowman/asyncpvp/commons/processors/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/me/frostedsnowman/asyncpvp/commons/processors/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/me/frostedsnowman/asyncpvp/core/AsyncPvpPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/me/frostedsnowman/asyncpvp/core/AsyncPvpPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,25 +196,37 @@
       <option name="presentableId" value="Default" />
       <updated>1576800162152</updated>
     </task>
+    <task id="LOCAL-00001" summary="redo 1.14 damage processing">
+      <created>1577344795561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577344795561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="redo 1.14 damage processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="redo 1.14 damage processing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Notifications" timestamp="1576827437900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1576827437900" />
-    <state x="275" y="21" key="#Project_Structure" timestamp="1577044589987">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1577346471796">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1577044589987" />
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1577346471796" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576978429848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1576978429848" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1576974142442">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1577350067260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1576974142442" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1577350067260" />
     <state x="266" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576961908703">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -221,6 +243,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="341" y="215" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1577063950185" />
+    <state x="333" y="0" key="CommitChangelistDialog2" timestamp="1577350407903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="333" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1577350407903" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1576974655127">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -245,6 +271,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1576964498497" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1577344802966">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1577344802966" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1577224373035">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -261,10 +291,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1576970932574" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577344521276">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577350258067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1577344521276" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1577350258067" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,14 +1,10 @@
 package me.frostedsnowman.asyncpvp.commons.processors;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 @FunctionalInterface
-public interface Processor<T, U> extends Function<T, U> {
+public interface Processor<T, U> {
 
-    U process(T t);
-
-    @Override
-    default U apply(T t) {
-        return process(t);
-    }
+    void process(T t, Consumer<U> u);
 }
