@@ -22,8 +22,7 @@ public final class DamageEvaluation {
     private int fireTicks;
     private double thornsDamage;
 
-    private List<Runnable> internalVelocityChanges = new ArrayList<>();
-    private List<Runnable> externalVelocityChanges = new ArrayList<>();
+    private List<Runnable> syncedActions = new ArrayList<>();
 
     private boolean criticalHit;
     private boolean sweep;
@@ -50,11 +49,11 @@ public final class DamageEvaluation {
         return this.thornsDamage == 0 ? OptionalDouble.empty() : OptionalDouble.of(this.thornsDamage);
     }
 
-    public void addInternalVelocityChange(Runnable runnable) {
-        this.internalVelocityChanges.add(runnable);
+    public void addSyncedAction(Runnable runnable) {
+        this.syncedActions.add(runnable);
     }
 
-    public void addExternalVelocityChange(Runnable runnable) {
-        this.externalVelocityChanges.add(runnable);
+    public void runSyncedActions() {
+        this.syncedActions.forEach(Runnable::run);
     }
 }

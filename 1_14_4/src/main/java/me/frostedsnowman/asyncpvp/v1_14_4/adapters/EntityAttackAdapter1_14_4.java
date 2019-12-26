@@ -22,8 +22,7 @@ public class EntityAttackAdapter1_14_4 extends EntityAttackAdapter {
         Bukkit.getScheduler().runTask(this.plugin, () -> {
           //  damageEvaluation.getFireTicks().ifPresent(victim::setFireTicks);
             damageEvaluation.getBaseDamage().ifPresent(value -> victim.damage(value, attacker));
-            damageEvaluation.getInternalVelocityChanges().forEach(Runnable::run);
-            damageEvaluation.getExternalVelocityChanges().forEach(Runnable::run);
+            damageEvaluation.runSyncedActions();
         });
     }
 }
